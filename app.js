@@ -17,6 +17,7 @@ var con = mysql.createConnection({
   host: process.env.HOSTNAME,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
+  database: process.env.c,
 });
 
 con.connect(function (err) {
